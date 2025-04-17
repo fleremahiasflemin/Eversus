@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-color: #0c0c1e;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a2f;
+  padding: 10px 20px;
+}
+.logo {
+  font-size: 1.5em;
+  color: #9b59b6;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav li {
+  cursor: pointer;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav .active {
+  color: #7f8cff;
+}
+main.duelos {
+  padding: 20px;
+}
+form#duelo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #161634;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+form#duelo-form input, form#duelo-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+form#duelo-form button {
+  background: #7f8cff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.duelo-card {
+  background: #1f1f3f;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.duelo-card h3 {
+  margin: 0 0 10px 0;
+  color: #b684ff;
+}
+.cuotas {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.cuotas button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #7f8cff;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
