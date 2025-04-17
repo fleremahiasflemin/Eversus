@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Duelos | eVersus</title>
+  <link rel="stylesheet" href="css/duelos.css" />
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <span class="logo">eVersus</span>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="active">Duelos</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="duelos">
+    <h1>🆚 Crear Duelo</h1>
+    <form id="duelo-form">
+      <input type="text" placeholder="Jugador 1" required />
+      <input type="text" placeholder="Jugador 2" required />
+      <input type="text" placeholder="Juego (ej: Tekken 8)" required />
+      <input type="time" required />
+      <button type="submit">Crear Duelo</button>
+    </form>
+
+    <h2>Duelos Activos</h2>
+    <div class="duelo-card">
+      <h3>🎮 Dragon Ball FighterZ</h3>
+      <p><strong>Goku</strong> vs <strong>Vegeta</strong></p>
+      <p>🕒 20:00</p>
+      <div class="cuotas">
+        <button>Apostar por Goku (1.65)</button>
+        <button>Apostar por Vegeta (2.20)</button>
+      </div>
+    </div>
+
+    <div class="duelo-card">
+      <h3>🎮 Mortal Kombat 11</h3>
+      <p><strong>Scorpion</strong> vs <strong>Sub-Zero</strong></p>
+      <p>🕒 21:30</p>
+      <div class="cuotas">
+        <button>Apostar por Scorpion (1.90)</button>
+        <button>Apostar por Sub-Zero (1.90)</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
