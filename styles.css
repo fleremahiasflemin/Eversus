@@ -22,60 +22,94 @@ nav ul {
 }
 nav li {
   cursor: pointer;
-}
-nav a {
-  color: white;
-  text-decoration: none;
+  position: relative;
 }
 nav .active {
   color: #7f8cff;
 }
-main.duelos {
+.wallet {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.deposit {
+  background-color: #7f8cff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a1a2f;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1;
+  flex-direction: column;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.modules {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #12122b;
+  flex-wrap: wrap;
+}
+.module {
+  background: #1e1e3c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  color: #b684ff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.live {
   padding: 20px;
 }
-form#duelo-form {
+.match {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
   background: #161634;
   padding: 15px;
   border-radius: 10px;
-  max-width: 400px;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
-form#duelo-form input, form#duelo-form button {
+.odds span {
+  margin-right: 15px;
+}
+.footer-menu {
+  margin-top: 30px;
   padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-form#duelo-form button {
-  background: #7f8cff;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-.duelo-card {
-  background: #1f1f3f;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.duelo-card h3 {
-  margin: 0 0 10px 0;
-  color: #b684ff;
-}
-.cuotas {
+  background: #1a1a2f;
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-.cuotas button {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  background: #7f8cff;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
+@media (max-width: 768px) {
+  .topbar, .wallet, nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .modules {
+    flex-direction: column;
+    align-items: center;
+  }
+  .match {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
